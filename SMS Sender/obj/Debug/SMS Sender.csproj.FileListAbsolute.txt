@@ -1,0 +1,27 @@
+G:\Freelancer\SMS Sender\SMS Sender\bin\Debug\SMSDB.mdf
+G:\Freelancer\SMS Sender\SMS Sender\bin\Debug\SMSDB_log.ldf
+G:\Freelancer\SMS Sender\SMS Sender\bin\Debug\SMS Sender.exe.config
+G:\Freelancer\SMS Sender\SMS Sender\bin\Debug\SMS Sender.exe
+G:\Freelancer\SMS Sender\SMS Sender\bin\Debug\SMS Sender.pdb
+G:\Freelancer\SMS Sender\SMS Sender\bin\Debug\EntityFramework.SqlServer.dll
+G:\Freelancer\SMS Sender\SMS Sender\bin\Debug\EntityFramework.dll
+G:\Freelancer\SMS Sender\SMS Sender\bin\Debug\MaterialSkin.dll
+G:\Freelancer\SMS Sender\SMS Sender\bin\Debug\MetroFramework.Design.dll
+G:\Freelancer\SMS Sender\SMS Sender\bin\Debug\MetroFramework.Fonts.dll
+G:\Freelancer\SMS Sender\SMS Sender\bin\Debug\MetroFramework.dll
+G:\Freelancer\SMS Sender\SMS Sender\obj\Debug\SMS_Sender.Category_Management.resources
+G:\Freelancer\SMS Sender\SMS Sender\obj\Debug\SMS_Sender.Customer_Management.resources
+G:\Freelancer\SMS Sender\SMS Sender\obj\Debug\SMS_Sender.Home.resources
+G:\Freelancer\SMS Sender\SMS Sender\obj\Debug\SMS_Sender.Login.resources
+G:\Freelancer\SMS Sender\SMS Sender\obj\Debug\SMS_Sender.Properties.Resources.resources
+G:\Freelancer\SMS Sender\SMS Sender\obj\Debug\SMS_Sender.SendSMS.resources
+G:\Freelancer\SMS Sender\SMS Sender\obj\Debug\SMS Sender.csproj.GenerateResource.cache
+G:\Freelancer\SMS Sender\SMS Sender\obj\Debug\SMS Sender.csproj.CoreCompileInputs.cache
+G:\Freelancer\SMS Sender\SMS Sender\obj\Debug\SMS Sender.csproj.CopyComplete
+G:\Freelancer\SMS Sender\SMS Sender\obj\Debug\SMS Sender.exe
+G:\Freelancer\SMS Sender\SMS Sender\obj\Debug\SMS Sender.pdb
+G:\Freelancer\SMS Sender\SMS Sender\bin\Debug\SMS Sender.exe.manifest
+G:\Freelancer\SMS Sender\SMS Sender\bin\Debug\SMS Sender.application
+G:\Freelancer\SMS Sender\SMS Sender\obj\Debug\SMS Sender.exe.manifest
+G:\Freelancer\SMS Sender\SMS Sender\obj\Debug\SMS Sender.application
+G:\Freelancer\SMS Sender\SMS Sender\obj\Debug\SMS_Sender.Manage_User.resources

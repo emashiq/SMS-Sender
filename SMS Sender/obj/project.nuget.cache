@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "3LcsS1nJ/Fc9alaTDyE+L1iqvzSzzy4JHlc0IbPBx7bLqrxphSmyZ8I0HGt9PuLfMkcBRYNWrEDi4y6HTNyivA==",
+  "success": true,
+  "projectFilePath": "G:\\Freelancer\\SMS Sender\\SMS Sender\\SMS Sender.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SHOHID\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512",
+    "C:\\Users\\SHOHID\\.nuget\\packages\\materialskin\\0.2.1\\materialskin.0.2.1.nupkg.sha512",
+    "C:\\Users\\SHOHID\\.nuget\\packages\\metromodernui\\1.4.0\\metromodernui.1.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

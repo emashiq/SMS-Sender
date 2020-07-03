@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS Sender", "SMS Sender\SMS Sender.csproj", "{B9CD4B7D-40F6-47C4-8C47-D3922257248A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SMS Sender App", "Setup\Setup.vdproj", "{670FED21-02FD-4B1B-AEE8-252A8A1BD981}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9CD4B7D-40F6-47C4-8C47-D3922257248A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9CD4B7D-40F6-47C4-8C47-D3922257248A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9CD4B7D-40F6-47C4-8C47-D3922257248A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9CD4B7D-40F6-47C4-8C47-D3922257248A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{670FED21-02FD-4B1B-AEE8-252A8A1BD981}.Debug|Any CPU.ActiveCfg = Debug
+		{670FED21-02FD-4B1B-AEE8-252A8A1BD981}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82FDF0CC-E582-474A-9B45-D2231BC3DBCF}
+	EndGlobalSection
+EndGlobal

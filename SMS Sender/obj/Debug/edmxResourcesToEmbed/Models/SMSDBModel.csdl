@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SMSDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="SMSDBEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="GetCategoryList" ReturnType="Collection(SMSDBModel.GetCategoryList_Result)" />
+    <FunctionImport Name="GetCustomerByCategroy" ReturnType="Collection(SMSDBModel.GetCustomerByCategroy_Result)">
+      <Parameter Name="categoryId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetCustomerList" ReturnType="Collection(SMSDBModel.GetCustomerList_Result)" />
+    <EntitySet Name="Categories" EntityType="SMSDBModel.Category" />
+    <EntitySet Name="Customers" EntityType="SMSDBModel.Customer" />
+    <EntitySet Name="Users" EntityType="SMSDBModel.User" />
+    <AssociationSet Name="FK_CustomerInfo_Category" Association="SMSDBModel.FK_CustomerInfo_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Customer" EntitySet="Customers" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="GetCategoryList_Result">
+    <Property Type="Int32" Name="CategoryId" Nullable="false" />
+    <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="8" />
+    <Property Type="String" Name="CreatedDate" Nullable="true" MaxLength="4000" />
+  </ComplexType>
+  <ComplexType Name="GetCustomerByCategroy_Result">
+    <Property Type="Int32" Name="CustomerId" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="550" />
+    <Property Type="String" Name="PhoneNumber" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="GetCustomerList_Result">
+    <Property Type="Int32" Name="CustomerId" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="550" />
+    <Property Type="String" Name="Address" Nullable="true" MaxLength="550" />
+    <Property Type="String" Name="PhoneNumber" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="8" />
+    <Property Type="String" Name="CreatedDate" Nullable="true" MaxLength="4000" />
+  </ComplexType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="CategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EditedBy" Type="Int32" />
+    <Property Name="EditedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Customers" Relationship="SMSDBModel.FK_CustomerInfo_Category" FromRole="Category" ToRole="Customer" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="CustomerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="550" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EditedBy" Type="Int32" />
+    <Property Name="EditedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Category" Relationship="SMSDBModel.FK_CustomerInfo_Category" FromRole="Customer" ToRole="Category" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="FullName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EditedBy" Type="Int32" />
+    <Property Name="EditedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <Association Name="FK_CustomerInfo_Category">
+    <End Type="SMSDBModel.Category" Role="Category" Multiplicity="1" />
+    <End Type="SMSDBModel.Customer" Role="Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
